@@ -1,0 +1,382 @@
+main {
+    width: 100%;
+}
+
+.top {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/pics/top1.webp);
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+
+.top h1 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 50px;
+}
+
+.sns {
+    margin: 80px auto;
+    width: 720px;
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.sns h2 {
+    color: var(--blackpink);
+}
+
+.sns a {
+    display: flex;
+    width: 100%;
+    background: var(--blackpink);
+    border-radius: 100px;
+    padding: 8px 15px;
+    margin: 5px 0;
+    text-align: left;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    align-items: center;
+    position: relative;
+    transition: 1s;
+}
+
+.sns a img {
+    display: block;
+    width: 20px;
+    filter: var(--img-white);
+    margin: 0 10px 0 0;
+}
+
+.sns a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    right: 25px;
+    width: 6px;
+    height: 6px;
+    border-top: solid 2px #FFF;
+    border-right: solid 2px #FFF;
+    transform: translateY(-50%) rotate(45deg);
+    transition: 1s;
+}
+
+.sns a:hover {
+    transition: .2s;
+    transform: scale(1.02);
+    background: var(--blackpinklight);
+    color: var(--twice-2);
+}
+
+.member {
+    width: 100%;
+    margin: 80px 0;
+}
+
+.member h2 {
+    width: 740px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    line-height: 1;
+    font-size: 36px;
+    color: var(--blackpink);
+}
+
+.member .area {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 0 calc((100% - 720px - 10px*2)/2);
+}
+
+.member .box {
+    min-width: 720px;
+    height: 720px;
+    margin: 27px 10px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    scroll-snap-align: center;
+    filter: drop-shadow(0 0 10px #0003);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.member .box:hover {
+    transition: .2s;
+    transform: scale(1.01);
+    filter: drop-shadow(-3px 3px 12px #0006);
+}
+
+.member a {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 50%;
+    transition: .2s;
+}
+
+.member a img {
+    width: 100%;
+    filter: var(--img-white);
+}
+
+.member a:hover {
+    background: #fff4;
+}
+
+.member .text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 100px 20px 20px 20px;
+    line-height: 1;
+    border-radius: 10px;
+}
+
+.member h3,
+.member h4,
+.member .explain {
+    filter: drop-shadow(0 0 10px #0005);
+}
+
+.member .birthday {
+    font-weight: lighter;
+}
+
+.member h3 {
+    font-size: 38px;
+    margin: 0 0 10px 0;
+}
+
+.member .explain {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.member .category span {
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 100px;
+    margin: 0 3px 0 0;
+    padding: 2px 10px;
+    background: #fff;
+    color: var(--twice-1);
+}
+
+@media screen and (max-width: 740px) {
+    .member .box {
+        min-width: 100%;
+        margin: 10px 0;
+        filter: none;
+        border-radius: 0;
+    }
+    
+    .member .box:hover {
+        transform: none;
+        filter: none;
+    }
+
+    .member .text {
+        border-radius: 0;
+        padding: 100px 10px 20px 10px;
+    }
+}
+
+.member .nayeon {
+    background-position: top center;
+    background-image: url(../img/pics/nayeon001.jpg);
+}
+
+.member .jeongyeon {
+    background-position: center right;
+    background-image: url(../img/pics/jeongyeon001.jpg);
+}
+
+.member .momo {
+    background-position: top left;
+    background-image: url(../img/pics/momo001.jpg);
+}
+
+.member .sana {
+    background-position: top center;
+    background-image: url(../img/pics/sana001.jpg);
+}
+
+.member .jihyo {
+    background-position: top right;
+    background-image: url(../img/pics/jihyo001.jpg);
+}
+
+.member .mina {
+    background-position: top left;
+    background-image: url(../img/pics/mina001.jpg);
+}
+
+.member .dahyun {
+    background-position: top center;
+    background-image: url(../img/pics/dahyun001.jpg);
+}
+
+.member .chaeyoung {
+    background-position: bottom left;
+    background-image: url(../img/pics/chaeyoung001.jpg);
+}
+
+.member .tzuyu {
+    background-position: top left;
+    background-image: url(../img/pics/tzuyu001.jpg);
+}
+
+.official {
+    width: 740px;
+    max-width: 100%;
+    margin: 60px auto;
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.official h2 {
+    line-height: 1;
+    font-size: 34px;
+    width: 100%;
+    color: var(--blackpink);
+}
+
+.official .back {
+    background: var(--blackpink);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.official .btn {
+    display: flex;
+    margin: 0 auto;
+    width: 160px;
+}
+
+.official a {
+    display: block;
+    width: 40px;
+    border-radius: 50%;
+    padding: 7px;
+    transition: 1s;
+}
+
+.official a:hover {
+    background: var(--blackpinklight);
+    transition: .2s;
+}
+
+.official img {
+    display: block;
+    width: 100%;
+    filter: var(--img-white);
+}
+
+@media screen and (max-width: 600px) {
+    .official {
+        display: block;
+    }
+
+    .official h2 {
+        margin: 0 0 10px;
+    }
+}
+
+.music {
+    width: 740px;
+    max-width: 100%;
+    padding: 0 10px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.music h2 {
+    line-height: 1;
+    text-align: left;
+    font-size: 34px;
+    margin: 0 0 10px;
+    color: var(--blackpink);
+}
+
+.music .flex {
+    display: flex;
+    align-items: center;
+    background: var(--blackpink);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.music img {
+    border-radius: 10px;
+    width: 400px;
+}
+
+.music .text {
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1;
+}
+
+.music p {
+    font-size: 12px;
+    color: var(--twice-1);
+}
+
+.music h3 {
+    font-size: 24px;
+    margin: 0 0 15px;
+}
+
+.music a {
+    border: 2px solid var(--twice-2);
+    border-radius: 100px;
+    padding: 3px 15px;
+    color: var(--twice-2);
+    font-size: 12px;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.music a:hover {
+    transition: .2s;
+    background: var(--twice-2);
+    color: var(--blackpinklight);
+}
+
+@media screen and (max-width: 740px) {
+    .music .flex {
+        display: block;
+        padding: 5px 5px 15px 5px;
+        border-radius: 10px;
+    }
+
+    .music img {
+        border-radius: 10px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .music .text {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
