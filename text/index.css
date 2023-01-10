@@ -100,6 +100,7 @@ main {
 .member .box {
     min-width: 720px;
     height: 720px;
+    max-height: 90vh;
     margin: 27px 10px;
     border-radius: 10px;
     background-repeat: no-repeat;
@@ -199,47 +200,47 @@ main {
 
 .member .nayeon {
     background-position: top center;
-    background-image: url(../img/pics/nayeon001.jpg);
+    background-image: url(../img/pics/nayeon001.webp);
 }
 
 .member .jeongyeon {
     background-position: center right;
-    background-image: url(../img/pics/jeongyeon001.jpg);
+    background-image: url(../img/pics/jeongyeon001.webp);
 }
 
 .member .momo {
     background-position: top left;
-    background-image: url(../img/pics/momo001.jpg);
+    background-image: url(../img/pics/momo001.webp);
 }
 
 .member .sana {
     background-position: top center;
-    background-image: url(../img/pics/sana001.jpg);
+    background-image: url(../img/pics/sana001.webp);
 }
 
 .member .jihyo {
     background-position: top right;
-    background-image: url(../img/pics/jihyo001.jpg);
+    background-image: url(../img/pics/jihyo001.webp);
 }
 
 .member .mina {
     background-position: top left;
-    background-image: url(../img/pics/mina001.jpg);
+    background-image: url(../img/pics/mina001.webp);
 }
 
 .member .dahyun {
     background-position: top center;
-    background-image: url(../img/pics/dahyun001.jpg);
+    background-image: url(../img/pics/dahyun001.webp);
 }
 
 .member .chaeyoung {
     background-position: bottom left;
-    background-image: url(../img/pics/chaeyoung001.jpg);
+    background-image: url(../img/pics/chaeyoung001.webp);
 }
 
 .member .tzuyu {
     background-position: top left;
-    background-image: url(../img/pics/tzuyu001.jpg);
+    background-image: url(../img/pics/tzuyu001.webp);
 }
 
 .official {
