@@ -78,6 +78,7 @@ main {
 .member {
     width: 100%;
     margin: 80px 0;
+    position: relative;
 }
 
 .member h2 {
@@ -87,7 +88,44 @@ main {
     padding: 0 10px;
     line-height: 1;
     font-size: 36px;
+    font-weight: 900;
     color: var(--blackpink);
+}
+
+.member .slideexplain {
+    position: absolute;
+    right: 10px;
+    top: 52px;
+    font-size: 12px;
+    color: var(--twice-2);
+    animation: 4s slideexplain infinite;
+}
+
+@keyframes slideexplain {
+    0% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(10px);
+    }
+    40% {
+        transform: translateX(0);
+    }
+    60% {
+        transform: translateX(0);
+    }
+    70% {
+        transform: translateX(10px);
+    }
+    80% {
+        transform: translateX(0);
+    }
+    90% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .member .area {
@@ -100,7 +138,7 @@ main {
 .member .box {
     min-width: 720px;
     height: 720px;
-    max-height: 90vh;
+    max-height: 85vh;
     margin: 27px 10px;
     border-radius: 10px;
     background-repeat: no-repeat;
@@ -114,8 +152,7 @@ main {
 
 .member .box:hover {
     transition: .2s;
-    transform: scale(1.01);
-    filter: drop-shadow(-3px 3px 12px #0006);
+    filter: drop-shadow(0 0 10px #0006);
 }
 
 .member a {
@@ -257,6 +294,7 @@ main {
 .official h2 {
     line-height: 1;
     font-size: 34px;
+    font-weight: 900;
     width: 100%;
     color: var(--blackpink);
 }
@@ -314,6 +352,7 @@ main {
     line-height: 1;
     text-align: left;
     font-size: 34px;
+    font-weight: 900;
     margin: 0 0 10px;
     color: var(--blackpink);
 }
